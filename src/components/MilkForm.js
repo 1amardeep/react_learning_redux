@@ -89,11 +89,9 @@ const MilkForm = ({ type, closeTheModal }) => {
           </div>
         </div>
         <button className="button is-primary">{Btn_text}</button>
-        {typeUpdate && (
-          <button className="button is-primary ml-1" onClick={closeTheModal}>
-            Cancel
-          </button>
-        )}
+        <button className="button is-primary ml-1" onClick={closeTheModal}>
+          Cancel
+        </button>
       </form>
     </div>
   );

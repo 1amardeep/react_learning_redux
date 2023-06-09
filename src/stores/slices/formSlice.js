@@ -5,8 +5,8 @@ const initialState = {
   id: "",
   name: "",
   quantity: 0,
-  startTime: "00:00",
-  endTime: "00:00",
+  startTime: null,
+  endTime: null,
 };
 const formSlice = createSlice({
   name: "form",

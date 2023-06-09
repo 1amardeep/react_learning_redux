@@ -19,7 +19,7 @@ function MilkTimePicker({ type, time }) {
 
   return (
     <div>
-      <TimePicker onChange={handleOnChange} value={value} />
+      <TimePicker onChange={handleOnChange} value={value} disableClock />
     </div>
   );
 }
