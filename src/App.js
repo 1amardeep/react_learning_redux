@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { TbMoodKid } from "react-icons/tb";
 
-function App() {
+import MilkForm from "./components/MilkForm";
+import MilkList from "./components/MilkList";
+import MilkModal from "./components/MilkModal";
+
+const App = () => {
+  const [showModal, setShowModal] = useState(false);
+  const handleShowModal = () => {
+    setShowModal(!showModal);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav
+        className="navbar fixed"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand">
+          <TbMoodKid></TbMoodKid>
+        </div>
+      </nav>
+      <div className="container pt-2">
+        <button className="button is-primary mb-4" onClick={handleShowModal}>
+          Add
+        </button>
+        {showModal && (
+          <MilkModal>
+            <MilkForm type="add" closeTheModal={handleShowModal}></MilkForm>
+          </MilkModal>
+        )}
+        {/* <MilkSearch></MilkSearch> */}
+        <MilkList></MilkList>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
