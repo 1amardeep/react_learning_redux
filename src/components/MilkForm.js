@@ -7,7 +7,6 @@ import MilkTimePicker from "./MilkTimePicker";
 const MilkForm = ({ type, closeTheModal }) => {
   const dispatch = useDispatch();
   const Btn_text = type === "add" ? "Submit" : "Update";
-  const typeUpdate = Btn_text === "Update";
   const { id, name, quantity, startTime, endTime } = useSelector((state) => {
     return state.forms;
   });

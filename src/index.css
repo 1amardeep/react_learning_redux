@@ -1,7 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .fixed {
   position: sticky !important;
-  display: block;
-  width: 100%;
   top: 0;
   left: 0;
 }
@@ -19,4 +21,26 @@
   width: 1.4rem;
   height: 1.4rem;
   cursor: pointer;
+}
+
+.animation {
+  animation: babyAnimation 3s linear 2s infinite;
+}
+
+@keyframes babyAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

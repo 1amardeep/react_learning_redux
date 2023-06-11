@@ -1,4 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
+
+import { babiesSliceReducer } from "./slices/babySlice";
+
 import {
   milksSliceReducer,
   changeSearchTerm,
@@ -19,6 +22,7 @@ const store = configureStore({
   reducer: {
     milks: milksSliceReducer,
     forms: formSliceReducer,
+    babies: babiesSliceReducer,
   },
 });
 
@@ -34,3 +38,5 @@ export {
   changeTheFormState,
   updateMilk,
 };
+
+export * from "./thunks/fetchBabies";
