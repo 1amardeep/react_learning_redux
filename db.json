@@ -1,5 +1,78 @@
 {
-  "babies": [{ "id": 1, "name": "Reyaansh" }],
+  "babies": [
+    {
+      "id": 1,
+      "name": "Reyaansh"
+    },
+    {
+      "name": "Mable Halvorson",
+      "id": 2
+    },
+    {
+      "name": "Rosa Cormier",
+      "id": 3
+    },
+    {
+      "name": "Julius Rowe",
+      "id": 4
+    },
+    {
+      "name": "Ms. Della Lubowitz-Moore V",
+      "id": 5
+    },
+    {
+      "name": "Nick Senger",
+      "id": 6
+    },
+    {
+      "name": "Blanca Koepp",
+      "id": 7
+    },
+    {
+      "name": "Vincent Stamm",
+      "id": 8
+    },
+    {
+      "name": "Terrence Waters",
+      "id": 9
+    },
+    {
+      "name": "Jose Bartell",
+      "id": 10
+    },
+    {
+      "name": "Mindy Weissnat",
+      "id": 11
+    },
+    {
+      "name": "Sherman Braun",
+      "id": 12
+    },
+    {
+      "name": "Mrs. Mamie Kub",
+      "id": 13
+    },
+    {
+      "name": "Robin Moen",
+      "id": 14
+    },
+    {
+      "name": "Blanca Legros",
+      "id": 15
+    },
+    {
+      "name": "Eula Price PhD",
+      "id": 16
+    },
+    {
+      "name": "Dr. Fred Kuvalis",
+      "id": 17
+    },
+    {
+      "name": "Loretta Kuvalis",
+      "id": 18
+    }
+  ],
   "albums": [],
   "photos": []
 }

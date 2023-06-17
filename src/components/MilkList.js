@@ -44,7 +44,7 @@ const MilkList = () => {
         <td>{startTime}</td>
         <td>{endTime}</td>
         <td>{quantity}</td>
-        <td>
+        <td className="flex">
           <MdDelete
             className="svgTable"
             onClick={() => deleteHandler(id)}
@@ -68,7 +68,7 @@ const MilkList = () => {
             <th>Feed</th>
             <th>Start Time</th>
             <th>End Time</th>
-            <th>
+            <th className="flex items-center">
               Quantity (ml) <TbBabyBottle></TbBabyBottle>
             </th>
             <th>Action</th>

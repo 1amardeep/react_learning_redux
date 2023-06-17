@@ -40,3 +40,5 @@ export {
 };
 
 export * from "./thunks/fetchBabies";
+
+export * from "./thunks/addBabies";

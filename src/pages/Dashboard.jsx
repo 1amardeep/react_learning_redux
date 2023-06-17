@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MilkModal from "../components/MilkModal";
 import MilkForm from "../components/MilkForm";
 import MilkList from "../components/MilkList";
+import Button from "../components/Button";
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -11,9 +12,9 @@ const Dashboard = () => {
   return (
     <div className="container">
       <div className="pt-2">
-        <button className="button is-primary mb-4" onClick={handleShowModal}>
+        <Button className="mb-4" primary rounded onClick={handleShowModal}>
           Add
-        </button>
+        </Button>
         {showModal && (
           <MilkModal>
             <MilkForm type="add" closeTheModal={handleShowModal}></MilkForm>

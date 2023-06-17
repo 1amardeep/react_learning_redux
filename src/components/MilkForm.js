@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { addMilk, updateMilk, changeQuantity } from "../stores";
 import MilkTimePicker from "./MilkTimePicker";
+import Button from "./Button";
 
 const MilkForm = ({ type, closeTheModal }) => {
   const dispatch = useDispatch();
@@ -87,10 +88,14 @@ const MilkForm = ({ type, closeTheModal }) => {
             />
           </div>
         </div>
-        <button className="button is-primary">{Btn_text}</button>
-        <button className="button is-primary ml-1" onClick={closeTheModal}>
-          Cancel
-        </button>
+        <div className="flex">
+          <Button primary rounded>
+            {Btn_text}
+          </Button>
+          <Button className="ml-1" danger rounded onClick={closeTheModal}>
+            Cancel
+          </Button>
+        </div>
       </form>
     </div>
   );
